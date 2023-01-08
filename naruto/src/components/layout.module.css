@@ -4,14 +4,14 @@ html {
   font: 112.5%/1.45em sans-serif, georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
-  background-color: #000;
+  background-color: rgb(253, 247, 247);
 }
 body {
   overflow: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
+  color: rgb(245, 143, 11);
   font-family: sans-serif, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -47,7 +47,7 @@ body {
 }
 
 .nav-link-text {
-  color: white;
+  color: rgb(223, 25, 25);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
@@ -56,4 +56,7 @@ body {
 
 .nav-link-text:hover {
   color: #37ba83;
+}
+.title {
+  color: aqua;
 }
