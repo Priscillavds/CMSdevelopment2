@@ -9,17 +9,10 @@ html {
 body {
   overflow: hidden;
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: rgb(245, 143, 11);
   font-family: sans-serif, georgia, serif;
   font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  background-image: linear-gradient(45deg, rgb(246, 195, 132),rgb(250, 140, 146));
 }
 
 .container {
@@ -27,10 +20,12 @@ body {
   max-width: 1080px;
   margin: auto;
   font-family: sans-serif;
+  
 }
 
 .nav {
   display: flex;
+  background-color: darkorange;
 }
 
 .nav-links {
@@ -44,10 +39,11 @@ body {
 
 .nav-link-item {
   padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .nav-link-text {
-  color: rgb(223, 25, 25);
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
@@ -55,8 +51,8 @@ body {
 }
 
 .nav-link-text:hover {
-  color: #37ba83;
+  color: crimson;
 }
 .title {
-  color: aqua;
+  color: crimson;
 }

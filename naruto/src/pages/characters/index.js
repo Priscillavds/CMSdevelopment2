@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 
 const CharactersPage = ({data: {allWpCharacter: {edges}}}) => {
     return (
@@ -9,11 +9,12 @@ const CharactersPage = ({data: {allWpCharacter: {edges}}}) => {
             {edges.map((item) => {
                 const character = item.node.characterFields;
                 const image = getImage(item.node.characterFields.picture.localFile);
-                return <>
+                const slug = item.node.slug;
+                return <Link to={`/characters/${slug}`}>
                     <h2 key={item.node.id}>{character.name}</h2>
                     <GatsbyImage image={image} alt={item.node.characterFields.picture.altText}></GatsbyImage>
                     
-                </>
+                </Link>
             })}
 
         </Layout>
